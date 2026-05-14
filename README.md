@@ -6,6 +6,12 @@ Based on the official Snowflake tutorial: [Getting Started with Snowpark in Snow
 
 This project demonstrates how to use Snowpark for Python inside Snowflake Notebooks to build a data pipeline that transforms campaign spend and monthly revenue data.
 
+## Setup Lab Environment
+
+Before starting, set up the lab environment using this link: [Get Started with Snowpark in Python Worksheets - Lab Setup](https://app.snowflake.com/resources/labs/getStartedWithSnowparkInPythonWorksheets)
+
+This will create the required database, schema, warehouse, and load the sample data tables.
+
 ## Prerequisites
 
 - Snowflake account with `ACCOUNTADMIN` role
@@ -34,6 +40,10 @@ This project demonstrates how to use Snowpark for Python inside Snowflake Notebo
 - `REVENUE`
 
 ## Stored Procedure
+
+The final step deploys the entire pipeline as a stored procedure. Once created, you can view it in the Snowsight Database Explorer under:
+
+`SNOWPARK_DEMO_DB > SNOWPARK_DEMO_SCHEMA > Procedures > CAMPAIGN_SPEND_MONTHLY_REVENUE_DATA_PIPELINE_SP()`
 
 ```sql
 call campaign_spend_monthly_revenue_data_pipeline_sp();
