@@ -39,11 +39,17 @@ This will create the required database, schema, warehouse, and load the sample d
 - `SEARCH_ENGINE`, `SOCIAL_MEDIA`, `VIDEO`, `EMAIL` (spend per channel)
 - `REVENUE`
 
+<img width="1440" height="730" alt="image" src="https://github.com/user-attachments/assets/19d5e2f1-2526-4ac3-a2d8-7271fc76b1b7" />
+
+
 ## Stored Procedure
 
 The final step deploys the entire pipeline as a stored procedure. Once created, you can view it in the Snowsight Database Explorer under:
 
 `SNOWPARK_DEMO_DB > SNOWPARK_DEMO_SCHEMA > Procedures > CAMPAIGN_SPEND_MONTHLY_REVENUE_DATA_PIPELINE_SP()`
+
+<img width="1440" height="736" alt="image" src="https://github.com/user-attachments/assets/2b862b68-42e6-4907-9171-c0942b5c283e" />
+
 
 ```sql
 call campaign_spend_monthly_revenue_data_pipeline_sp();
